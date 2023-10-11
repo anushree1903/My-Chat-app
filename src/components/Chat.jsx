@@ -2,12 +2,12 @@ import Cam from "../img/cam.png";
 import Add from "../img/add.png";
 import More from "../img/more.png";
 import Messages from "./Messages";
-import Input from "./Input";
+
 
 function Chat() {
   return (
     <div className="chat-container flex flex-col w-full bg-zinc-800 rounded-r-lg">
-      <div className="chatInfo h-12 w-full bg-zinc-800 flex items-center justify-between rounded-tr-lg">
+      <div className="chatInfo h-14 w-full bg-zinc-800 flex items-center justify-between ">
         <div className="flex items-center">
           <span className="ml-5 text-gray-200">Anu</span>
         </div>
@@ -19,7 +19,7 @@ function Chat() {
         </div>
       </div>
         <Messages />
-        <Input />
+     
     </div>
   );
 }

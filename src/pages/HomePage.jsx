@@ -4,8 +4,8 @@ import Chat from "../components/Chat"
 
 function HomePage() {
   return (
-    <div className="Home bg-gradient-to-r from-sky-300 to-blue-400 h-screen flex justify-center items-center">
-      <div className="bg-white flex rounded-lg h-5/6 w-5/6">
+    <div className="Home  h-screen flex justify-center items-center">
+      <div className="bg-white flex  h-screen w-screen">
         <Sidebar />
         <Chat />
       </div>
