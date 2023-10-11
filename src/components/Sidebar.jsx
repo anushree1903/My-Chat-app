@@ -7,7 +7,7 @@ import Search from "./Search"
 
 function Sidebar() {
   return (
-    <div className="hidden md:block w-1/4 md:w-1/4 h-full bg-gray-900 rounded-l-md">
+    <div className="hidden md:block w-1/3 md:w-1/3 h-full bg-zinc-800 rounded-l-md">
       <Navbar />
       <Search />
       <Chats />

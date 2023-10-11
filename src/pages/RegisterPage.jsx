@@ -2,7 +2,7 @@
 
 function RegisterPage() {
   return (
-    <div className="formContainer bg-gradient-to-r from-sky-400 to-blue-500 h-screen flex justify-center items-center  ">
+    <div className="formContainer bg-gradient-to-r from-sky-300 to-blue-400 h-screen flex justify-center items-center  ">
       <div className="formWrapper ">
         <form className=" bg-gray-900 flex flex-col gap-4 p-8  rounded-lg items-center">
         <span className="logo text-white text-2xl font-semi-bold">Chatter</span>
