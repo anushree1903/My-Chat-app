@@ -7,7 +7,7 @@ import Messages from "./Messages";
 function Chat() {
   return (
     <div className="chat-container flex flex-col w-full bg-zinc-800 rounded-r-lg">
-      <div className="chatInfo h-14 w-full bg-zinc-800 flex items-center justify-between ">
+      <div className="chatInfo h-12 w-full bg-zinc-800 flex items-center justify-between ">
         <div className="flex items-center">
           <span className="ml-5 text-gray-200">Anu</span>
         </div>
