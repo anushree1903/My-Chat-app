@@ -2,7 +2,7 @@
 
 function Navbar() {
   return (
-    <div className="w-full bg-zinc-800  h-12 font-semi-bold text-white flex justify-between items-center mb-1 p-3 text-xs md:text-lg mt-2">
+    <div className="w-full bg-zinc-800  h-12 font-semi-bold text-white flex justify-between items-center mb-1 p-3 text-xs md:text-lg mt-1">
       Chatter
       <div className="flex items-center">
        

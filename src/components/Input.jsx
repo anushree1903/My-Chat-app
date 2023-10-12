@@ -1,22 +1,27 @@
-import Img from "../img/img.png"
-import Attach from "../img/attach.png"
+import Img from "../img/img.png";
+import Attach from "../img/attach.png";
 
 function Input() {
   return (
-    <div className="input-container w-2/3 h-12 bg-zinc-800 rounded-2xl pl-5 text-gray-200 text-md flex justify-between items-center">
-      <input className="bg-zinc-800 outline-none flex-grow" type="text" placeholder="Message" />
+    <div className="input-container bg-zinc-800 mb-2 w-3/4 mx-auto flex items-center rounded-full">
+      <input
+        className="bg-zinc-800 text-gray-200 py-2 px-3 rounded-full flex-grow outline-none "
+        type="text"
+        placeholder="Message"
+      />
 
-      <div className="flex space-x-4">
-        <img className="w-6 h-6 " src={Attach} alt="" />
-        <input type="file" style={{ display: "none" }} id="file" />
+      <div className="flex items-center space-x-2 ml-2 mr-3">
+        <img className="w-7 h-7" src={Attach} alt="Attach" />
         <label htmlFor="file">
-          <img className="w-6 h-6 " src={Img} alt="" />
+          <img className="w-7 h-7" src={Img} alt="Image" />
         </label>
       </div>
 
-      <button className="mr-5 ml-4">Send</button>
+      <button className="text-white rounded-full w-10 h-10 flex items-center justify-center focus:outline-none mr-5">
+        Send
+      </button>
     </div>
   );
 }
 
-export default Input
+export default Input;
