@@ -3,13 +3,9 @@ import { useState } from "react";
 import {  signInWithEmailAndPassword } from "firebase/auth";
 import { auth } from "../Firebase";
 
-
-
 function LoginPage() {
   const [err,setErr] = useState(false);
   const navigate = useNavigate();
-
-
 
   const handleSubmit = async (e)=>{
     e.preventDefault();
@@ -37,7 +33,6 @@ function LoginPage() {
           <p className="text-gray-400">don't have an account? <Link to="/register"> Register</Link></p>
           {err && <span>Something went wrong</span>}
         </form>
-        
       </div>
     </div>
   )
