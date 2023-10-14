@@ -2,6 +2,8 @@ import Cam from "../img/cam.png";
 import Add from "../img/add.png";
 import More from "../img/more.png";
 import Messages from "./Messages";
+import { signOut } from "firebase/auth";
+import { auth } from "../Firebase";
 
 
 function Chat() {
@@ -15,7 +17,8 @@ function Chat() {
           <img className="h-6 w-6 ml-12" src={Cam} alt="" />
           <img className="h-6 w-6 ml-3" src={Add} alt="" />
           <img className="h-6 w-6 ml-3 mr-5" src={More} alt="" />
-          <button className="text-xs ml-3 bg-blue-500 p-1 rounded-md mr-3">Logout</button>
+          <button onClick={()=>signOut(auth)}
+           className="text-xs ml-3 bg-blue-500 p-1 rounded-md mr-3">Logout</button>
         </div>
       </div>
         <Messages />
